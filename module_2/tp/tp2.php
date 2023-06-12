@@ -43,7 +43,18 @@ foreach ($users as $key => $user){
         echo "<li>Element $k :  $u </li>";
     }
     echo '</ul>';
-} ?>
+}
 
+//EX4
+
+const A_MAIL = ['machon@hotmail.fr', 'truc@eni.fr', 'bidule@hotmail.fr'];
+$domain = [];
+foreach (A_MAIL as $mail){
+
+    $do = explode('@', $mail);
+    $domain[$do[1]]++;
+}
+
+var_dump($domain);
 
 
