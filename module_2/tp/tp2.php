@@ -52,7 +52,12 @@ $domain = [];
 foreach (A_MAIL as $mail){
 
     $do = explode('@', $mail);
-    $domain[$do[1]]++;
+
+    if(isset($domain[$do[1]])){
+        $domain[$do[1]]++;
+    }else{
+        $domain[$do[1]] = 1;
+    }
 }
 
 var_dump($domain);
