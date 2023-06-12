@@ -1,3 +1,4 @@
+
 <?php
 //EX1
 /*Créer un tableau multidimensionnel associatif dont les clés sont des noms de personnes
@@ -48,6 +49,8 @@ foreach ($users as $key => $user){
 //EX4
 
 const A_MAIL = ['machon@hotmail.fr', 'truc@eni.fr', 'bidule@hotmail.fr'];
+
+
 $domain = [];
 foreach (A_MAIL as $mail){
 
@@ -59,7 +62,6 @@ foreach (A_MAIL as $mail){
         $domain[$do[1]] = 1;
     }
 }
-
 var_dump($domain);
 
 
