@@ -13,4 +13,5 @@ $icecream2 = new Icecream("Glace au chocolat", "pot");
 echo $icecream;
 echo '<br>';
 echo $icecream2;
-
+echo '<br>';
+echo Dessert::getNumber();
