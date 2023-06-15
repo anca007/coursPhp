@@ -1,6 +1,6 @@
 <?php
-
-if (isset($_REQUEST['submit'])) { ?>
+var_dump($_REQUEST);
+if (isset($_REQUEST['name'])) { ?>
     <!doctype html>
     <html lang="en">
     <head>
@@ -38,6 +38,5 @@ if (isset($_REQUEST['submit'])) { ?>
     <?php
 } else {
 
-    header("location: q1.html");
-
+    //header("location: q1.html");
 }

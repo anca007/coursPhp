@@ -1,7 +1,7 @@
 
 let form = document.getElementById('form')
 form.addEventListener('submit', function (event) {
-
+    event.preventDefault()
 
     let inputs = document.querySelectorAll('input')
     let message = "";
@@ -13,7 +13,8 @@ form.addEventListener('submit', function (event) {
     })
 
     if(message){
-        event.preventDefault()
         alert(message)
+    }else{
+        form.submit()
     }
 })
