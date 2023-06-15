@@ -4,7 +4,7 @@ buttons.forEach(function (button) {
 
     button.addEventListener('click', function () {
         callApi(this.value)
-        //
+        //envoi en GET
         // fetch('server.php?response=' + value)
         //     .then(response => response.json())
         //     .then(data => console.log(data));
@@ -20,6 +20,7 @@ buttons.forEach(function (button) {
 //
 // }
 
+//avec POST
 async function callApi(value) {
     let auto = {'immat' : "45ert78", 'marque' : 'Citroen'};
     let promise = await fetch('server.php', {method : 'POST', body : JSON.stringify(auto)});
